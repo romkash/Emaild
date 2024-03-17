@@ -1,3 +1,4 @@
+// в терминале пишем nmp install
 1. ПОДКЛЮЧИЛ БИБЛИОТЕКУ NODEMAILER Т.К ОНА ПОЗВОЛЯЕТ ОТПРАВЛ СООБЩ
    const nodemailer = require('nodemailer');
 2. СОЗДАЛ TRANSPORT С ПОМОЩЬЮ К-Т БУДУТ ОТПРАВЛЯТЬСЯ ПИСЬМА
