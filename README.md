@@ -15,7 +15,7 @@
    const Volk = 'etot code dlya nichego nakotets otpravlen';
 6. ОТПРАВКА САМОГО СООБЩЕНИЯ :
    transporter.sendMail({
-    from: "RAXVODILA@yandex.by", //как в обычной отправке письма кому-либо указываем всякую херь
+    from: "RAXVODILA@yandex.by", //как в обычной отправке письма кому-либо, указываем всякую херь
     to: "pokelovitel1220@gmail.com",
     subject: `Код для ничего`,
     text:'Код:',
