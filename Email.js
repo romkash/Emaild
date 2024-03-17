@@ -1,27 +1,22 @@
 const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
-    service: 'Gmail',
+    host: "smtp.yandex.ru",
+    port: 465,
+    secure: true,
     auth: {
-        user: 'gamakicisan@gmail.com',
-        pass: 'YouTude125',
-    }
+        user: 'RAXVODILA@yandex.by',
+        pass:'cjfduhbocqpnkijc',
+    },
 });
 
 const Code = Math.floor(100000 + Math.random() * 900000);
-
-const mailOptions = {
-    from: 'pokelovitel1220@gmail.com',
-    to: 'melser1t4werka@gmail.com',
-    subject: 'Код',
-    text: `Ваш код: ${Code}`
-};
-
-
-transporter.sendMail(mailOptions, async (error, info) => {
-    if (error) {
-        console.error('Ошибка при отправке письма:', error);
-    } else {
-        console.log('Письмо успешно отправлено:', info.response);
-    }
+const Volk = 'etot code dlya nichego nakotets otpravlen';
+transporter.sendMail({
+    from: "RAXVODILA@yandex.by",
+    to: "pokelovitel1220@gmail.com",
+    subject: `Код для ничего`,
+    text:'Код:',
+    html: `<h2>Тот самый код:</h2>
+        <p><h1>${Code}</h1></p>
+        <p><h3>${Volk}</h3></p>`,
 });
-
